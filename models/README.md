@@ -11,9 +11,9 @@
 
 ## 3MF file ready to print:
 
-[FumeExtractor.3mf](FumeExtractor.3mf)
+[FumeExtractor.3mf](FumeExtractor.3mf?raw=true)
 
 ## Sketchup file for editing:
 
-[FumeExtractor-Sketchup.skp](FumeExtractor-Sketchup.skp)
+[FumeExtractor-Sketchup.skp](FumeExtractor-Sketchup.skp?raw=true)
 
