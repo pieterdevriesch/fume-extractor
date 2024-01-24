@@ -81,17 +81,49 @@ Then the back cover is screwed in with 5 M2 countersunk allen bolts to close it 
 
 <img src="photos/IMG_4079.JPEG?raw=true" alt="Assembled no filter" title="Assembled no filter" width=45%> <img src="photos/IMG_4083.JPEG?raw=true" alt="Assembled complete" title="Fan mounting outside" width=45%>
 
+## Final thoughts:
+
+
+- I could have used an integrated USB-C with adjustable boost converter that I found also,
+  but this would have had a few disadvantages: With the 2 boards separated I could put the on/off switch
+  between the charger and the converter. This made it easy to connect the status led to the battery voltage
+  and not need additional circuitry for a 12V (or less since the output voltage is adjustable,
+  so realistically between 4 and 12V) status LED. Also this way the boost circuitry is completely off,
+  preventing battery drain when not using.
+
+- As mentioned before I probably should have mounted the boost converter in the airstream of the fans for cooling.
+
+- The fans now operate on a voltage that can be adjusted between about 4 to 12V.
+  However when they are running at any voltage below about 10 volt the airflow is insufficient.
+  This means a non adjustable boost converter or simply fixed to 12V and a simple on/off switch
+  would have been enough for the same functionality.
+  Now I can run the fans slowly and quietly but there's not much point to it.
+
+- I haven't tested the battery life yet, I'll charge it up fully and then run it at full speed
+  and see how long it stays on. I'll update the runtime here.
+  Theoretically without any significant losses it should be about 10 hours:
+
+  ``` T = 10 * a / w ```
+  
+  ``` 10.416 = 10 * 2 / 1.68 ```
+
+- That brings me to the last point, noise. It's not exactly quiet but I know that going in,
+  simply a consequence of the small fan diameter. A single 80mm fan would be much quieter
+  at the same airflow (but also make the entire unit quite a bit bigger).
+  For me the design was also a big factor,
+  since anyone can just plug a fan on some 12V power brick and get the same function,
+  but I wanted the form to be nice as well.
 
 ## Bill of Materials:
 
 
 - a smattering of M2 screws and possibly some nuts [Amazon.nl](https://www.amazon.nl/dp/B0BQHVT6XN)
-- 2 40mm 12VDC fans [Aliexpress](https://www.aliexpress.com/item/1005006143445019.html) These are not the ones I used, found them in a parts pile
+- 2 40mm 12VDC fans [Aliexpress](https://www.aliexpress.com/item/1005006143445019.html) (These are not the ones I used, found them in a parts pile)
 - TP4056 USB-C Charger [Aliexpress](https://www.aliexpress.com/item/4001362182688.html)
 - MT3608 Boost Converter [Aliexpress](https://www.aliexpress.com/item/32893412121.html)
 - 100Kohm 5 pin potentiometer [Aliexpress](https://www.aliexpress.com/item/1005005721756208.html)
 - 2000 mAh Lithium cell [Aliexpress](https://www.aliexpress.com/item/32797382689.html)
-- some wires and a battery connector [Aliexpress](https://www.aliexpress.com/item/1005006318040722.html)
+- some wires and a battery connector [Aliexpress](https://www.aliexpress.com/item/1005006318040722.html) (These are not the ones I used, found them in a parts pile)
 - Activated carbon filter material [Aliexpress](https://www.aliexpress.com/item/32789944517.html)
 - about 75 grams of PLA(+)
 - about 1 stick of hot glue 
