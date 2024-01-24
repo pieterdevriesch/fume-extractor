@@ -41,7 +41,7 @@ See the photo for an idea of how the electronics are connected.
 Pretty simple, a TP4056 Lithium charger board with USB-C port, connected to a 18650 battery holder. (which I later changed for a lithium pouch cell due to space limitations)
 This gives between 3V and 4.2V out depending on state of charge (when plugged in the output of the charger board is simply 4.2V, not 5V). This is connected (with the positive wire passing through the switch part of the potentiometer) to a MT3608 boost converter that boosts up to 12V, controlled with a potentiometer on the PCB. I desoldered this potentiometer, measured that it was 100 kilo Ohm and ordered some 5 pin (3 for the potentiometer, one for the switch at the 0 position) potentiometers, and soldered it to the boost converter with some wires. 
 
-A 3mm red LED with a 120ohm current limiting resistor is also connected via the potentiometer switch. This ensures that it will run on battery voltage and not on the 12V. Any difference in brightness between full and empty battery is not important. I also sanded down the top of the LED for a more frosted look but this is entirely personal preference. I might add a tiny drop of epoxy in the hole to act as a light pipe the next time I'm mixing some up for something else.
+A 3mm red LED with a 120Ω current limiting resistor is also connected via the potentiometer switch. This ensures that it will run on battery voltage and not on the 12V. Any difference in brightness between full and empty battery is not important. I also sanded down the top of the LED for a more frosted look but this is entirely personal preference. I might add a tiny drop of epoxy in the hole to act as a light pipe the next time I'm mixing some up for something else.
 
 The boost regulator now regulates between 4-ish volts and the full 12V boost. For proper fume extracting anything less than 10 volt doesn't really do much, it's not strong enough, especially with the filter material also in the way.
 
@@ -61,7 +61,7 @@ Fans are screwed in with some long M2 screws and nuts and washers (since my fans
 
 <img src="photos/IMG_3843.JPEG?raw=true" alt="Fan mounting inside" title="Fan mounting inside" width=45%> <img src="photos/IMG_3844.JPEG?raw=true" alt="Fan mounting outside" title="Fan mounting outside" width=45%>
 
-Potentiometer through the hole with nut and the knob on top. Hot glued the wires for security. The LED is pushed in the hole where it makes a friction fit. Then after connecting the wires (122ohm resistor is a 100+22ohm in series) it's also hot glued in place.
+Potentiometer through the hole with nut and the knob on top. Hot glued the wires for security. The LED is pushed in the hole where it makes a friction fit. Then after connecting the wires (122Ω resistor is a 100Ω+22Ω in series) it's also hot glued in place.
 
 <img src="photos/Potentiometer.png?raw=true" alt="Potentiometer mounting" title="Potentiometer mounting" width=75%>
 
@@ -84,17 +84,20 @@ Then the back cover is screwed in with 5 M2 countersunk allen bolts to close it 
 
 ## Bill of Materials:
 
-- about 75 grams of PLA(+) 
-- a smattering of M2 screws and possibly some nuts 
+
+- a smattering of M2 screws and possibly some nuts [Amazon.nl](https://www.amazon.nl/dp/B0BQHVT6XN)
+- 2 40mm 12VDC fans [Aliexpress](https://www.aliexpress.com/item/1005006143445019.html) These are not the ones I used, found them in a parts pile
+- TP4056 USB-C Charger [Aliexpress](https://www.aliexpress.com/item/4001362182688.html)
+- MT3608 Boost Converter [Aliexpress](https://www.aliexpress.com/item/32893412121.html)
+- 100Kohm 5 pin potentiometer [Aliexpress](https://www.aliexpress.com/item/1005005721756208.html)
+- 2000 mAh Lithium cell [Aliexpress](https://www.aliexpress.com/item/32797382689.html)
+- some wires and a battery connector [Aliexpress](https://www.aliexpress.com/item/1005006318040722.html)
+- Activated carbon filter material [Aliexpress](https://www.aliexpress.com/item/32789944517.html)
+- about 75 grams of PLA(+)
 - about 1 stick of hot glue 
-- 2 40mm 12VDC fans 
-- TP4056 USB-C Charger 
-- MT3608 Boost Converter 
-- 100Kohm 5 pin potentiometer 
-- 2000 mAh Lithium cell 
-- some wires and a battery connector 
 - red 3mm LED 
-- 100 ohm resistor 
-- 22 ohm resistor 
-- Activated carbon filter material 
+- 100Ω resistor 
+- 22Ω resistor 
+
+Total cost: about €20
 
