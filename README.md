@@ -92,6 +92,8 @@ Then the back cover is screwed in with 5 M2 countersunk allen bolts to close it 
   preventing battery drain when not using.
 
 - As mentioned before I probably should have mounted the boost converter in the airstream of the fans for cooling.
+  Although after running it for several hours on battery the outside plastic where it's mounted has become merely warm,
+  no deformation or anything, so it looks like it's not getting too hot.
 
 - The fans now operate on a voltage that can be adjusted between about 4 to 12V.
   However when they are running at any voltage below about 10 volt the airflow is insufficient.
@@ -106,6 +108,9 @@ Then the back cover is screwed in with 5 M2 countersunk allen bolts to close it 
   ``` T = 10 * a / w ```
   
   ``` 10.416 = 10 * 2 / 1.68 ```
+
+- Practically after running it for a few hours on my desk while working and recharging the battery afterwards
+  I estimate a maximum usable runtime of about 3-4 hours, looks like there's quite some losses in the boost circuit.
 
 - That brings me to the last point, noise. It's not exactly quiet but I know that going in,
   simply a consequence of the small fan diameter. A single 80mm fan would be much quieter
