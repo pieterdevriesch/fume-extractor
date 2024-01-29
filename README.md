@@ -39,7 +39,7 @@ I suppose another difference is I ignored the decorative patterns. Due to printi
 See the photo for an idea of how the electronics are connected. 
 
 Pretty simple, a TP4056 Lithium charger board with USB-C port, connected to a 18650 battery holder. (which I later changed for a lithium pouch cell due to space limitations)
-This gives between 3V and 4.2V out depending on state of charge (when plugged in the output of the charger board is simply 4.2V, not 5V). This is connected (with the positive wire passing through the switch part of the potentiometer) to a MT3608 boost converter that boosts up to 12V, controlled with a potentiometer on the PCB. I desoldered this potentiometer, measured that it was 100 kilo Ohm and ordered some 5 pin (3 for the potentiometer, one for the switch at the 0 position) potentiometers, and soldered it to the boost converter with some wires. 
+This gives between 3V and 4.2V out depending on state of charge (when plugged in the output of the charger board is simply 4.2V, not 5V). This is connected (with the positive wire passing through the switch part of the potentiometer) to a MT3608 boost converter that boosts up to 12V, controlled with a potentiometer on the PCB. I desoldered this potentiometer, measured that it was 100 kΩ and ordered some 5 pin (3 for the potentiometer, one for the switch at the 0 position) potentiometers, and soldered it to the boost converter with some wires. 
 
 A 3mm red LED with a 120Ω current limiting resistor is also connected via the potentiometer switch. This ensures that it will run on battery voltage and not on the 12V. Any difference in brightness between full and empty battery is not important. I also sanded down the top of the LED for a more frosted look but this is entirely personal preference. I might add a tiny drop of epoxy in the hole to act as a light pipe the next time I'm mixing some up for something else.
 
@@ -101,8 +101,8 @@ Then the back cover is screwed in with 5 M2 countersunk allen bolts to close it 
   would have been enough for the same functionality.
   Now I can run the fans slowly and quietly but there's not much point to it.
 
-- I haven't tested the battery life yet, I'll charge it up fully and then run it at full speed
-  and see how long it stays on. I'll update the runtime here.
+- ~~I haven't tested the battery life yet, I'll charge it up fully and then run it at full speed
+  and see how long it stays on. I'll update the runtime here.~~
   Theoretically without any significant losses it should be about 10 hours:
 
   ``` T = 10 * a / w ```
@@ -126,7 +126,7 @@ Then the back cover is screwed in with 5 M2 countersunk allen bolts to close it 
 - 2 40mm 12VDC fans [Aliexpress](https://www.aliexpress.com/item/1005006143445019.html) (These are not the ones I used, found them in a parts pile)
 - TP4056 USB-C Charger [Aliexpress](https://www.aliexpress.com/item/4001362182688.html)
 - MT3608 Boost Converter [Aliexpress](https://www.aliexpress.com/item/32893412121.html)
-- 100Kohm 5 pin potentiometer [Aliexpress](https://www.aliexpress.com/item/1005005721756208.html)
+- 100kΩ 5 pin potentiometer [Aliexpress](https://www.aliexpress.com/item/1005005721756208.html)
 - 2000 mAh Lithium cell [Aliexpress](https://www.aliexpress.com/item/32797382689.html)
 - some wires and a battery connector [Aliexpress](https://www.aliexpress.com/item/1005006318040722.html) (These are not the ones I used, found them in a parts pile)
 - Activated carbon filter material [Aliexpress](https://www.aliexpress.com/item/32789944517.html)
